@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.head_background{
+    background-image: url("https://shorturl.at/hENV4");
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+}
+.heading1{
+    font-family: bree serif;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+.logo{
+    height: 100px;
+    width: 100px;
+}
+.header_button{
+    color: white;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-width: thin;
+    background-color: transparent;
+    border-color: red;
+    font-family: Consolas;
+    font-size: 12px;
+    border-radius: 20px;
+
+}
+.header_button:hover{
+    background-color: red;
+}
+p{
+    color: grey;
+}
+.blockquote1{
+    max-width: 100vw;
+    margin: 10px 30px;
+    padding: 25px;
+    background: #f8fffe;
+    border: 1px solid #b0d2cd;
+    color: #0b4237;
+    box-sizing: border-box;
+    
+}
+
+.blockquote1_border{
+    border-left-width: 8px;
+}

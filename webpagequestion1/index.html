@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="styles.css">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d1c2ea8b80.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1</title>
+</head>
+<body>
+        <div class="head_background d-flex flex-column justify-content-center">
+            <div>
+                <img src ="https://shorturl.at/rCQW8" class="logo"/>
+                <h1 class="heading1">
+                   Understanding the fundamentals of state in Javascript
+               </h1>
+               <button class="header_button">BY Jeremy Thomas</button>
+            </div>           
+        </div>
+        <div class="introduction m-5  pl-5 pr-5">
+            <p>Chapter 3 from the book; Vumbula React — Co-authored by
+                John Kagga
+            </p>
+
+            <p>
+                In earlier chapters, we’ve dealt mostly with functional React components that do not require state
+                management. This chapter’s main focus is on <a class="text-danger" href="#sectionid-1">state</a>, its management and components that utilise it in
+                React.
+            </p>
+        </div>
+
+        <div id="sectionid-1" class="section-1 m-5  pl-5 pr-5">
+            <h2>
+                What is <a class="text-danger" href="#sectionid-1">State</a>?
+            </h2>
+
+            <p>
+                State is a JavaScript object that stores a component’s dynamic data and determines the component’s
+                behaviour. Because state is dynamic, it enables a component to keep track of changing information in
+                between renders and for it to be dynamic and interactive.
+            </p>
+
+            <p>
+                State is similar to props but unlike props, it is private to a component and is controlled solely by the
+                said component. In the examples from previous chapters, the behaviour of components has primarily
+                depended on the props that are passed down to them. In those cases, the components that receive the
+                props have no control over them because props are read-only.
+            </p>
+        </div>
+
+        <div class="section-2 m-5 pl-5 pr-5 ">
+            <h2>
+                Adding State to a <a class="text-danger" href="#sectionid-1">Class Component</a>
+            </h2>
+            <blockquote class="blockquote1 blockquote1_border">
+                <pre>
+                <span class="text-danger">class</span> Greeting extends React.Component {
+                <span class="text-info">render()</span>{
+                <span class="text-danger">return</span> &lt;h1&gt;I’m a component in need of some state! &lt;/h1&gt;;
+                }
+                  }
+            </pre>
+
+            </blockquote>
+
+            <p>
+                Adding state to the Greeting component above involves defining within the class component, a constructor
+                function that assigns the initial state using this.state.
+            </p>
+            <blockquote class="blockquote1 blockquote1_border">
+                <pre>
+                    <span class="text-danger">class</span> Greeting extends React.Component {
+                        <span class="text-info">construstor</span>(props) {
+                        <span class="text-info">super</span>(props);
+                           // Define your state object here
+                           this.state = {
+                             name: ‘Jane Doe’
+                           }
+                         }
+                         <span class="text-info">render()</span>{
+                           <span class="text-danger">return</span> &lt;h1&gt;Hello { this.state.name }&lt;/h1&gt;;
+                         }
+                      }
+                </pre>
+
+            </blockquote>
+
+            
+        </div>
+
+        <div class="third-section m-5  pl-5 pr-5">
+            <h2>
+                Investigating State using <a class="text-danger" href="">React Dev Tools</a>
+            </h2>
+
+            <p>
+                The devtools are available for download on both Mozilla Firefox Add-ons and the Chrome Web Store. Follow
+                the appropriate link to install the devtools depending on which browser you have installed on your
+                computer.
+            </p>
+
+            <p>
+                Throughout the rest of this book, Chrome will be used as the browser of choice. In order to confirm
+                successful installation of the devtools on Chrome, open the developer tools window using Cmd+Opt+I on a
+                Mac or Ctrl+Alt+I on a windows PC. You should now see a <a class="text-danger" href="">React tab</a>.
+            </p>
+        </div>
+    </body>
+</html>
